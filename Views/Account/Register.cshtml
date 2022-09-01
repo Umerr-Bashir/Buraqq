@@ -1,0 +1,62 @@
+﻿<link href="~/css/Buraqq.css" rel="stylesheet" type="text/css" />
+@using Buraqq.Models
+@model User
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<body class="Register-body">
+    <div class="container Register-container">
+        <div class="row">
+            <div class="col-md-4 mx-auto">
+
+                @if (ViewBag.Error != "")
+                {
+                        <p style="color: red;">@ViewBag.Error</p>
+                }
+                <div class="card">
+                    <div class="card-title Register-title">
+                        <h5 class="Account-h5">Register</h5>
+                        <div class="fa fa-solid fa-users user-icon"></div>
+                    </div>
+                    <div class="card-body">
+                        <form asp-controller="Account" asp-action="Register" method="post">
+                            <div class="form-group">
+                                <span class="fa fa-solid fa-user"></span><label for="Name"> FirstName:</label>
+                                <input asp-for="FirstName" type="text" class="form-control" name="FirstName" id="FirstName" />
+                            </div>
+                            <div class="form-group">
+                                <span class="fa fa-solid fa-user"></span><label for="Name"> LastName:</label>
+                                <input asp-for="LastName" type="text" class="form-control" name="LastName" id="LastName" />
+                            </div>
+                            <div class="form-group">
+                                <label for="Email">Email:</label>
+                                <input asp-for="Email" type="text" class="form-control" name="Email" id="Email" />
+                            </div>
+                            <div class="form-group">
+                                <label for="Phone">Phone:</label>
+                                <input asp-for="Phone" type="number" class="form-control" name="Email" id="Email" />
+                            </div>
+                            <div class="form-group">
+                                <label for="Password">Password:</label>
+                                <input asp-for="Password" type="password" class="form-control" name="Password" id="Password" />
+                            </div>
+                            <a asp-controller="Account" asp-action="Login">Already have an account!</a>
+
+                        </form>
+
+                        <a asp-controller="Account" asp-action="Register" class="btn Register-btn">Register</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+</body>

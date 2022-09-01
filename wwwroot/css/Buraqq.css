@@ -1,0 +1,171 @@
+﻿
+body {
+}
+
+/*////////////////////////////////////////////////Index*/
+
+.bg-color1 {
+    background-color: ghostwhite;
+}
+
+h1 {
+    color: #bc424e;
+    font-size: 53px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 50px 
+    margin-top: 15px;
+}
+
+.card {
+    border-radius: 20px;
+    opacity: 0.9;
+}
+
+.pagination {
+    margin-left: 391px;
+    margin-bottom: 20px;
+}
+
+.page-link:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.page-link:focus {
+    border: 2px solid blue;
+}
+
+.page-link:active {
+    background-color: darkblue;
+}
+
+/*//////////////////////////////////////////////////////Account*/
+
+.Register-body {
+    height: 100%;
+}
+
+.Register-title {
+    text-align: center;
+    background-color: gray;
+    height: 160px;
+    opacity: 0.9;
+    border-radius: 18px;
+}
+
+.fa-user {
+    color: #dc3545;
+}
+
+.user-icon {
+    font-size: 94px;
+    color: #ebdcdc;
+}
+
+.Register-btn {
+    background-color: #3838a6;
+    color: white;
+}
+.Register-btn:hover {
+    color: white;
+}
+
+.Register-body {
+    background-image: url('../images/teachers/pexels-miguel-á-padriñán-255379.jpg');
+    opacity: 0.9;
+}
+
+.Register-container {
+    height: 642px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.Account-h5 {
+    color: white;
+}
+
+
+
+/*
+//////////////////////////////////////////////////Teacher-Profile*/
+.Teacherprofile-cont{
+    background-color: ghostwhite;
+}
+.h5-profile {
+    padding-top: 20px;
+}
+
+.Profile-img {
+    height: 363px;
+}
+.hr-index {
+    height: 2px !important;
+    margin-left: 50px;
+    width: 86%;
+    background-color: blue;
+}
+/*.hr-profile {
+    width: 89%;
+    border: 2px solid #d41528;
+    background-color: #d41528;
+}*/
+.hr-line {
+    height: 2px !important;
+    background-color: blue;
+    margin-top: 85px;
+    margin-left: 130px;
+    width: 58%;
+}
+.View-profile {
+    background-color: #3838a6;
+    color: white;
+}
+.View-profile:hover{
+    color:white;
+}
+.btn-Message {
+    margin-top: 42px;
+    background-color: #3838a6;
+    color: white;
+}
+
+.btn-Message:hover {
+    color: #dcdce6;
+}
+/*////////////////////////////////////NAVBARR
+*/ 
+.navbar {
+    background-color: #af2d3a;
+}
+
+.navbar-cont {
+    background-color: #af2d3a;
+    height: 52px;
+    margin-top: -8px;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 25px;
+}
+
+.navbar-brand:hover {
+    color: #dcdce6;
+}
+
+.login-icon {
+    font-size: 20px;
+    margin-right: 5px;
+    color: black !important;
+}
+.nav-link:hover {
+    color: #dcdce6;
+}
+.nav-link:active {
+    color: #dcdce6;
+}
+.nav-link {
+    color: white;
+}
+

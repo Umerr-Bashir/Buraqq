@@ -1,0 +1,45 @@
+﻿<link href="~/css/Buraqq.css" rel="stylesheet" type="text/css" />
+@using Buraqq.Models.ViewModel
+@model List<TeacherInfoViewModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+<div class="bg-color1">
+    <h1 class="h1-1 text-center">Find Your Mentor</h1>
+    <hr class="text-center hr-index" />
+    <div class="text-center">
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Medical</a></li>
+            <li class="page-item"><a class="page-link" href="#">Computing</a></li>
+            <li class="page-item"><a class="page-link" href="#">Maths</a></li>
+            <li class="page-item"><a class="page-link" href="#">Accounting</a></li>
+            <li class="page-item"><a class="page-link" href="#">Arts</a></li>
+            <li class="page-item"><a class="page-link" href="#">Language</a></li>
+        </ul>
+    </div>
+
+
+
+    <div>
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-lg-3 col-md-4">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="@item.Image" alt="Card-image" style="width:100%" />
+                        <div class="card-body">
+                            <h3 class="card-title">@item.Name</h3>
+                            <p class="card-text"><b>Speaciality:</b>@string.Join(", ",item.Subject);</p>
+                            <p class="card-text"><b>Fee:</b>"@item.Fee"</p>
+                            <a asp-controller="Home" asp-action="TeacherProfile" asp-route-id="@item.Id" class="btn View-profile">View Profile</a>
+                        </div>
+
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
